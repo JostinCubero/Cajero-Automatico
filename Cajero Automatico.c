@@ -10,6 +10,10 @@ int main (){
     int billetes;
     int cantidad;
     int residuo;
+    int residuo2;
+    int cantidad_5000;
+    int cantidad_10000;
+    int i=2;
 
     do{
 	
@@ -79,6 +83,60 @@ int main (){
 				}	
 				else{
 				
+					if(billetes%11000==0, i++ ){
+						
+						(billetes%10000==1000 );
+						(residuo=billetes%5000);
+						(cantidad_5000=billetes/5000);
+						(cantidad_10000=billetes/10000);
+
+						if(residuo==1000 ){
+							
+							(cantidad_10000 -= 1);
+							(cantidad = billetes /10000);
+							
+							printf("Billetes de 10000 : %d \n",cantidad_10000);
+							
+							(residuo = billetes - cantidad_10000*10000);
+							(cantidad_5000 -= 1);
+							(cantidad = residuo /10000);
+							printf("Billetes de 5000 : %d \n",cantidad);
+						
+							(residuo = billetes - cantidad_5000*5000);
+							(cantidad=residuo/2000);
+							printf("Billetes de 2000 : %d \n",cantidad); 
+							
+
+						}		
+        			}
+        				if(billetes%13000==0, i++ ){
+						
+						(billetes%10000==3000 );
+						(residuo=billetes%5000);
+						(cantidad_5000=billetes/5000);
+
+						if(residuo==3000 ){
+							
+							(cantidad_10000 -= 1);
+							(cantidad = billetes /10000);
+							
+							printf("Billetes de 10000 : %d \n",cantidad_10000);
+							
+							(residuo = billetes - cantidad_10000*10000);
+							(cantidad_5000 -= 1);
+							(cantidad = residuo /10000);
+							printf("Billetes de 5000 : %d \n",cantidad);
+						
+							(residuo = billetes - cantidad_5000*5000);
+							(cantidad=residuo/2000);
+							printf("Billetes de 2000 : %d \n",cantidad); 
+							
+						}		
+        			}
+        			
+        			
+        			else{
+        				
         			(cantidad = billetes /10000);
         			billetes %= 10000;
         			printf("Billetes de 10000 : %d \n",cantidad);
@@ -90,11 +148,10 @@ int main (){
         			(cantidad = billetes /2000);
         			billetes %= 2000;
         			printf("Billetes de 2000 : %d \n",cantidad);
-        			
-        			
-        			}	
-				}
-        	}
+					}
+        		}	
+			}
+        }
 
 				
          break;   
